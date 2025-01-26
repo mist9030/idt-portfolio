@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- University Brand Bar -->
+    <div class="bg-dark py-2">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="./photos/puclogo333.png" alt="University Logo" class="me-3">
+                <h4 class="text-white mb-0">Premier University, Chittagong</h4>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">University Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-home"></i> Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-book"></i> Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-calendar"></i> Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> Grades</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <img src="./photos/profile2.png" alt="Student Photo" class="rounded-circle me-2">
+                    <span class="text-light me-3"><i class="fas fa-user"></i> IS Tangil</span>
+                    <button class="btn btn-outline-light">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row g-4">
+            <!-- Student Profile Card -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="./photos/profile3.png" alt="Student Photo" class="rounded-circle mb-3">
+                        <h4 class="card-title">IS Tangil</h4>
+                        <p class="card-text text-muted">Student ID: 12345678</p>
+                        <p class="card-text">Computer Science</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-sm btn-primary"><i class="fas fa-edit"></i> Edit Profile</button>
+                            <button class="btn btn-sm btn-outline-primary"><i class="fas fa-id-card"></i> ID Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Welcome Card -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <img src="./photos/puclogo12.png" alt="University Logo" class="me-3">
+                            <div>
+                                <h4 class="card-title">Welcome back, IST!</h4>
+                                <p class="card-text">Semester Fall 2024 - Computer Science & Engineering</p>
+                                <p class="card-text"><small class="text-muted">Last login: Today, 9:15 AM</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Quick Links</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-file-alt me-2"></i> Enrollment
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-dollar-sign me-2"></i> Financial Aid
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-book me-2"></i> Library
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-envelope me-2"></i> Student Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Assignments -->
+            <div class="col-md-5">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Upcoming Assignments</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Portfolio Project</h6>
+                                    <small class="text-danger">Due Tomorrow</small>
+                                </div>
+                                <small>Internet Programming - CSE3210</small>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Algorithm Analysis</h6>
+                                    <small>Due in 3 days</small>
+                                </div>
+                                <small>Advanced Algorithms - CS401</small>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Research Paper</h6>
+                                    <small>Due in 5 days</small>
+                                </div>
+                                <small>Software Engineering - CS350</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Announcements -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Announcements</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <h6 class="mb-1">Campus Career Fair</h6>
+                                <p class="mb-1">Join us for the Spring Career Fair next week!</p>
+                                <small class="text-muted">2 hours ago</small>
+                            </div>
+                            <div class="list-group-item">
+                                <h6 class="mb-1">Library Hours Extended</h6>
+                                <p class="mb-1">Extended hours during finals week</p>
+                                <small class="text-muted">1 day ago</small>
+                            </div>
+                            <div class="list-group-item">
+                                <h6 class="mb-1">System Maintenance</h6>
+                                <p class="mb-1">Portal will be down for maintenance this Saturday</p>
+                                <small class="text-muted">2 days ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Schedule -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Today's Schedule</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Course</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>09:00 AM</td>
+                                    <td>Database Management Systems</td>
+                                    <td>Room 301</td>
+                                </tr>
+                                <tr>
+                                    <td>11:00 AM</td>
+                                    <td>Advanced Algorithms</td>
+                                    <td>Room 405</td>
+                                </tr>
+                                <tr>
+                                    <td>02:00 PM</td>
+                                    <td>Software Engineering</td>
+                                    <td>Room 201</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GPA Calculator -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">Current GPA</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h2 class="display-4">3.85</h2>
+                        <p class="text-muted">Cumulative GPA</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
